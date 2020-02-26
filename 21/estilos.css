@@ -1,0 +1,42 @@
+body {
+    background-color: #222d2d;
+    background-image: url("portada.jpg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+  
+h1{
+    color:black ;
+    font: size 100px ;
+    text-align: center;
+    
+}
+#contenedor{
+    display: flex;
+}
+.reverso{
+    margin-left: 32%;
+}
+.carta{
+    margin-left: 110px;
+}
+
+.resultado{
+    margin-left: 37%;
+    font-size: 45px;
+}
+.info{
+    margin-left: 10%;
+    margin-top: 2
+    0px;
+    font-size: 50px;
+
+}
+#verificar{
+    margin-left: 50px;
+}
+#pedir{
+    margin-left: 41%;
+
+}
+

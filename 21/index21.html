@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Poker o 21</title>
+</head>
+
+<body  background="portada.jpg " width="100%" height="100%" >
+  <h1>Poker 21</h1>
+  <div class="contendedor" id="contenedor">
+    <div class="reverso" id="reverso">
+      <img src="img/reverso.jpg">
+    </div>
+    <div class="carta" id="carta">
+  <img src="img/reverso.jpg">
+    </div>
+  </div>
+  <button id="pedir">Pedir cartas</button>
+      <button id="verificar">Validar cartas</button>
+  
+    <div class="info" id="info">
+      <label for="" font>La suma de sus cartas es :</label>
+      <label id="suma"></label>
+    </div>
+    
+  <label id="resultado" class="resultado"></label>
+</body>
+<script src="poker.js"></script>
+<script>
+  var mezclado=[];
+  var carta = new Carta();
+  var palo = new Palo();
+  var fabrica = new Fabrica();
+  fabrica.crearBarajas();
+  fabrica.mezclar();
+  var juego= new Juego();
+juego.crearBarajas();
+
+  document.getElementById("pedir").addEventListener("click",function(){
+juego.mezclar();
+console.log(juego.pedir());
+  })
+
+  document.getElementById("verificar").addEventListener('click',function(){
+    juego.verificar();
+  
+  })
+
+</script>
+
+</html>
